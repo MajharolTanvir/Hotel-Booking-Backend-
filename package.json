@@ -1,5 +1,5 @@
 {
-  "name": "Hotel_Booking",
+  "name": "hotel_booking",
   "version": "1.0.0",
   "main": "./src/index.ts",
   "repository": "https://github.com/MajharolTanvir/Hotel-Booking-Backend-.git",

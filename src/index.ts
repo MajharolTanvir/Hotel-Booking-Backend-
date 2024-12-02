@@ -1,6 +1,11 @@
 import express, { Request, Response } from 'express';
 import cors from   'cors';
-import dotenv from 'dotenv';
+import 'dotenv/config';
+import mongoose from 'mongoose';
+
+mongoose.connect(process.env.DATABASE_URL as string)
+.then(() => console.log('Connected to MongoDB'))
+.catch((error) => console.error('MongoDB connection error:', error));
 
 const app = express();
 
